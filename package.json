@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
-  "frontend": "next dev",
-  "backend": "python ../main.py",
+    "frontend": "next dev",
+    "backend": "cross-env python ../main.py",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,7 +13,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.9",
-    "next": "15.1.3",
+    "next": "^15.3.1",
     "next-auth": "^4.24.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -27,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "15.1.3",
     "postcss": "^8.4.49",

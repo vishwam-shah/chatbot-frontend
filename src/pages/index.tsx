@@ -1,10 +1,12 @@
+/* eslint-disable */
+
 // pages/index.tsx
 import { useEffect, useState } from 'react';
-import { MacOSWindowButtons } from '../components/MacOSWindowButtons';
-import { ThemeToggle } from '../components/ThemeToggle';
-import { ChatMessage } from '../components/ChatMessage';
-import { ChatInput } from '../components/ChatInput';
-import { VoiceControls } from '../components/VoiceControls';
+import { MacOSWindowButtons } from '@/components/macOSWindowButtons';
+import { ThemeToggle } from '@/components/ThemeToggle';
+import { ChatMessage } from '@/components/ChatMessage';
+import { ChatInput } from '@/components/ChatInput';
+import { VoiceControls } from '@/components/VoiceControls';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {

@@ -20,6 +20,8 @@
 # production
 /build
 
+unused_components/
+
 # misc
 .DS_Store
 *.pem
