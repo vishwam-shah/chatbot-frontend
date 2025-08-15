@@ -7,6 +7,7 @@
     "frontend": "next dev",
     "backend": "cross-env python ../main.py",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
