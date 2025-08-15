@@ -200,18 +200,18 @@ const Home: NextPage = () => {
 };
 
   return (
-    <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'} flex flex-col items-center justify-center px-4 py-8`}>
+  <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'} flex flex-col items-center justify-center px-4 py-8`}>
       <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
 
-      <div className="gradient-border w-full sm:w-[800px] p-6 sm:p-8 md:p-2 border border-gray-600 rounded-lg">
-        <div className={`inner-container ${isDarkMode ? 'bg-gray-800' : 'bg-orange-800'}`}>
-          <h1 className="text-2xl font-extrabold mb-4 text-white text-center">
+      <div className="gradient-border w-full sm:w-[800px] p-6 sm:p-8 md:p-2 border border-gray-200 dark:border-gray-600 rounded-lg">
+        <div className={`inner-container ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}> 
+          <h1 className={`text-2xl font-extrabold mb-4 text-center ${isDarkMode ? 'text-white' : 'text-gray-900'}`}> 
             <MacOSWindowButtons /> VS-GPT
           </h1>
 
-          <div className={`h-96 overflow-auto p-4 border border-gray-300 rounded-lg mb-4 ${isDarkMode ? 'bg-gray-700' : 'bg-amber-600'}`}>
+          <div className={`h-96 overflow-auto p-4 border rounded-lg mb-4 ${isDarkMode ? 'bg-gray-700 border-gray-300' : 'bg-gray-100 border-gray-300'}`}> 
             {messages.length === 0 ? (
-              <p className={`text-center ${isDarkMode ? 'text-white' : 'text-black'}`}>
+              <p className={`text-center ${isDarkMode ? 'text-white' : 'text-gray-700'}`}> 
                 Start the conversation!
               </p>
             ) : (
